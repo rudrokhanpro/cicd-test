@@ -1,0 +1,11 @@
+on:
+  push:
+
+jobs:
+  hello-world:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo 'hello world'
+        run: |
+          export NAME=world
+          echo hello $NAME
